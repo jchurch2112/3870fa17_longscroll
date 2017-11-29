@@ -1,0 +1,83 @@
+body{background-color:skyblue;}
+
+#canvas{border:2px solid red;
+        width:400px;
+        height:10000px;
+        margin:0 auto;
+        position:relative;
+        top:100px;
+        }
+
+#ball{border:2px solid blue;
+         width:30px;
+         height:30px;
+         color:white;
+         margin:0 auto;
+         border:2px solid blue;
+         position:absolute;
+         //top:123px;
+         //right:123px;
+         left:30px;
+         background-color:blue;
+         z-index:10;
+         opacity:0.9;
+         border-radius:100%;
+         animation: bouncing 1s infinite;
+      }
+@keyframes bouncing {
+  0%{top:0px; bottom:30px;}
+  50%{top:0px; bottom:30px;}
+
+}
+
+#header{margin-top:10px;
+   border:none;
+   font-size:48px;
+   font-family:"Comic Sans MS", cursive, sans-serif;
+   position:absolute;
+   top:90px;
+   left:35px;
+   background-color:none;
+  // z-index:-2;
+   //opacity:0.9;
+   //transition: .8s;}
+//h1:hover{transform:scale(4,4);}
+
+#header2{margin-top: 15px;
+  border:none;
+   font-size:48px;
+   font-family:"Comic Sans MS", cursive, sans-serif;
+   position:absolute;
+   top:90px;
+   right:50px;
+   background-color:none;
+   transition:rotate 1s;}
+
+
+#p1{border:solid blue 2px;
+    top:1100px;
+    left:35px;
+    font-size:30px;
+    float:left;
+    position:absolute;
+    }
+#p1_2{border:solid blue 1px;
+      position:relative;
+      width:120px;
+      top:1235px;
+      left:260px;
+      font-size:30px;
+      transition: 1s;}
+#p1_2:hover{transform:rotate(-45deg);}
+
+//relative, absolute, fixed, static
+
+#icon{width:300px;
+      border:1px solid green;
+      top:200px;
+      position:absolute;}
+
+#header2{border:none;
+  width:40px;
+  ;}
+//#header2:hover{transform:rotate(120deg);}
