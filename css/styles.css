@@ -22,11 +22,11 @@ body{background-color:skyblue;}
          z-index:10;
          opacity:0.9;
          border-radius:100%;
-         animation: bouncing 1s infinite;
+         //animation: bouncing 1s infinite;
       }
-@keyframes bouncing {
-  0%{top:0px; bottom:30px;}
-  50%{top:0px; bottom:30px;}
+//@keyframes bouncing {
+  
+  50%{left:320px;}
 
 }
 
@@ -81,3 +81,41 @@ body{background-color:skyblue;}
   width:40px;
   ;}
 //#header2:hover{transform:rotate(120deg);}
+
+#wrapper{margin-top:1466px}
+#bumper1{border:solid black;
+        width:100px;
+         //float:left;}
+#bumper2{//float:right;
+        margin-left:290px;
+        border:solid black;
+        margin-top:120px;
+        width:100px;}
+#bumper3{border:solid black;
+          //float:left;
+         margin-top:100px;
+        //margin-right:50px;
+        width:100px;}
+#bumper4{//float:right;
+        border:solid black;
+        margin-top:100px;
+        width:100px;
+        margin-left:290px;}
+#bumper5{//float:left;
+         border:solid black;
+          margin-top:100px;
+          width:100px;}
+#bumper6{border:solid black;
+        //float:right;
+        margin-top:100px;
+        width:100px;
+        margin-left:290px;}
+#tube{border:solid green 3px;
+      margin-top:150px;
+      height:600px;}
+#paper{border:solid white 1px;
+      width:150px;
+      height:240px;
+      margin-left:30px;
+      margin-top:50px;}
+

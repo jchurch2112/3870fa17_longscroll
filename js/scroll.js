@@ -16,16 +16,22 @@ window.onscroll = function(){
   //if (y > 80) {ball. style.top = 12 + y + 1.1 + "px";}
   //if (y > 120) {ball.style.top = 12 + "px";}
   //if (y > 160) {ball. style.top = 12 + y * 1.0 + "px";}
-  //if (y < 320) {ball.style.left = y + "px";}
+  if (y < 320) {ball.style.left = y + "px";}
   //ball bounce on "ANIMATION" --end
-  //if(y > 1360) {ball.style.left = 11 + "px";}
+  if(y > 1360) {ball.style.left = "1px";}
+ if (y > 1550)  {ball.style.left = "320px";}
+  if (y>1733) {ball.style.left = "1px";}
+  if (y > 1866)  {ball.style.left = "320px";}
+  if(y > 2000) {ball.style.left = "1px";}
+  if (y > 2133)  {ball.style.left = "320px";}
     //else{ball.style.right = y + "-px";}
-  if (y > 40) {ball.style.webkitTransform = 'top:0px; bottom:30px;'}
-  else{ball.style.webkitTransform = '39px';}
+  //if (y > 40) {ball.style.webkitTransform = 'top:0px; bottom:30px;'}
+  //else{ball.style.webkitTransform = '39px';}
+  
 
 
-  //if (y > 1180){p1_2.style.webkitTransform = 'rotate(-45deg)';}
-    //else {p1_2.style.webkitTransform = 'rotate(0deg)'}
+  if (y > 1180){p1_2.style.webkitTransform = 'rotate(-45deg)';}
+    else {p1_2.style.webkitTransform = 'rotate(0deg)'}
 
 
 //animation for ANIMATION header
@@ -41,6 +47,12 @@ if (y > 1000) {header2.style.top = -12 + y * 1.0 + "px";}
   //get rid of color (below) when animation is corrected//
   if (y > 1000) {header2.style.color = "skyblue";}
   else {header2.style.color = "black";}
+  
+  //for bumper id's
+  
 
+  
+
+  
 
 };
