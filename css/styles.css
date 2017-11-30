@@ -85,34 +85,45 @@ body{background-color:skyblue;}
 #wrapper{margin-top:1466px}
 #bumper1{border:solid black;
         width:100px;
-         //float:left;}
+      height:100px;
+       background-image:url(../img/pinball.png);}
 #bumper2{//float:right;
         margin-left:290px;
         border:solid black;
         margin-top:120px;
-        width:100px;}
+        width:100px;
+        height:100px;
+        background-image:url(../img/pinball.png);}
 #bumper3{border:solid black;
           //float:left;
          margin-top:100px;
         //margin-right:50px;
-        width:100px;}
+        width:100px;
+        height:100px;
+        background-image:url(../img/pinball.png);}
 #bumper4{//float:right;
         border:solid black;
         margin-top:100px;
         width:100px;
-        margin-left:290px;}
+        margin-left:290px;
+        height:100px;
+        background-image:url(../img/pinball.png);}
 #bumper5{//float:left;
          border:solid black;
           margin-top:100px;
-          width:100px;}
+          width:100px;
+          height:100px;
+          background-image:url(../img/pinball.png);}
 #bumper6{border:solid black;
         //float:right;
         margin-top:100px;
         width:100px;
-        margin-left:290px;}
-#tube{border:solid green 3px;
+        margin-left:290px;
+        height:100px;}
+#tube{background-image:url(../img/tube.png);
+      border:solid green 3px;
       margin-top:150px;
-      height:600px;}
+      height:800px;}
 #paper{border:solid white 1px;
       width:150px;
       height:240px;
