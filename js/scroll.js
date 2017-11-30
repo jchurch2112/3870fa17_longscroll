@@ -31,7 +31,7 @@ window.onscroll = function(){
     //else{ball.style.right = y + "-px";}
   //if (y > 40) {ball.style.webkitTransform = 'top:0px; bottom:30px;'}
   //else{ball.style.webkitTransform = '39px';}
-  
+
   //for ball rolling off of rotating "animations" & pinball
   if (y > 1240) {ball.style.left = "250px";}
   if (y > 1280) {ball.style.left = "200px";}
@@ -49,8 +49,11 @@ window.onscroll = function(){
   if (y > 2120) {ball.style.left = "200px";}
   if (y > 2160) {ball.style.left = "150px";}
   if (y > 2300) {ball.style.left = "100px";}
- 
-  if (y > 1180){p1_2.style.webkitTransform = 'rotate(-45deg)';}
+  if (y > 2460) {ball.style.left = "150px";}
+  if (y > 2472) {ball.style.left = "200px";}
+  if (y > 2561) {ball.style.left = "250px";}
+
+  if (y > 990){p1_2.style.webkitTransform = 'rotate(-45deg)';}
     else {p1_2.style.webkitTransform = 'rotate(0deg)'}
   //end of rotate animations and pinball
 
@@ -68,12 +71,12 @@ if (y > 1000) {header2.style.top = -12 + y * 1.0 + "px";}
   //get rid of color (below) when animation is corrected//
   if (y > 1000) {header2.style.color = "skyblue";}
   else {header2.style.color = "black";}
-  
+
   //for bumper id's
-  
 
-  
 
-  
+
+
+
 
 };
