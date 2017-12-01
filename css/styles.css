@@ -1,4 +1,6 @@
-body{background-color:skyblue;}
+body{background-color:skyblue;
+    background-image:url(../img/background.png);
+    height:400px;}
 
 #canvas{border:2px solid red;
         width:400px;
@@ -19,13 +21,14 @@ body{background-color:skyblue;}
          //right:123px;
          left:30px;
          background-color:blue;
-         z-index:10;
-         opacity:0.9;
+         z-index:-2;
+
          border-radius:100%;
          //animation: bouncing 1s infinite;
+         background-image: url(../img/ball2.png);
       }
 //@keyframes bouncing {
-  
+
   50%{left:320px;}
 
 }
@@ -83,50 +86,55 @@ body{background-color:skyblue;}
 //#header2:hover{transform:rotate(120deg);}
 
 #wrapper{margin-top:1466px}
-#bumper1{border:solid black;
+#bumper1{//border:solid black;
         width:100px;
       height:100px;
        background-image:url(../img/pinball.png);}
 #bumper2{//float:right;
         margin-left:290px;
-        border:solid black;
+        //border:solid black;
         margin-top:120px;
         width:100px;
         height:100px;
-        background-image:url(../img/pinball.png);}
-#bumper3{border:solid black;
+        background-image:url(../img/pinball.png);
+        transition:0s;}
+#bumper3{//border:solid black;
           //float:left;
          margin-top:100px;
         //margin-right:50px;
         width:100px;
         height:100px;
-        background-image:url(../img/pinball.png);}
+        background-image:url(../img/pinball.png);
+      transition:0s;}
 #bumper4{//float:right;
-        border:solid black;
+        //border:solid black;
         margin-top:100px;
         width:100px;
         margin-left:290px;
         height:100px;
-        background-image:url(../img/pinball.png);}
+        background-image:url(../img/pinball.png);
+      transition:0s;}
 #bumper5{//float:left;
-         border:solid black;
+         //border:solid black;
           margin-top:100px;
           width:100px;
           height:100px;
-          background-image:url(../img/pinball.png);}
+          background-image:url(../img/pinball.png);
+        transition:0s;}
 #bumper6{border:solid black;
         //float:right;
         margin-top:100px;
         width:100px;
         margin-left:290px;
-        height:100px;}
+        height:100px;
+      transition:0s;}
 #tube{background-image:url(../img/tube.png);
       border:solid green 3px;
       margin-top:150px;
-      height:800px;}
-#paper{border:solid white 1px;
+      height:800px;
+      z-index:12;}
+/*#paper{border:solid white 1px;
       width:150px;
       height:240px;
       margin-left:30px;
-      margin-top:50px;}
-
+      margin-top:50px;}*/
