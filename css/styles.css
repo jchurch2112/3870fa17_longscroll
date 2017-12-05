@@ -21,7 +21,7 @@ body{background-color:skyblue;
          //right:123px;
          left:30px;
          background-color:blue;
-         z-index:-2;
+         z-index:13;
 
          border-radius:100%;
          //animation: bouncing 1s infinite;
@@ -73,6 +73,47 @@ body{background-color:skyblue;
       transition: 1s;}
 #p1_2:hover{transform:rotate(-45deg);}
 
+
+#p2{border:grey solid 1px;
+    width:120px;
+    font-size:24px;
+    position:absolute;
+    left:260px;
+    top:2696px;}
+
+#p3{border:none;
+   opacity:0;
+   color:white;
+   font-family:"Comic Sans MS", cursive, sans-serif;
+   width:85px;
+   height:150px;
+   left:300px;
+   margin-top:3520px;
+   position:absolute;
+   transition:1s;
+   transition-delay:1.5s;}
+#p4{position:absolute;
+   margin-top:3800px;
+   font-size: 24px;
+   z-index:14;
+   font-family:"Comic Sans MS", cursive, sans-serif;
+   color:white;}
+   
+#p5{border:none;
+   width:160px;
+   height:50px;
+   margin-top:4848px;
+   position:absolute;
+   color:lightgreen;
+   z-index:15;
+   font-size:23px;
+   left:50px;
+   opacity:0;
+   animation:blink 1s infinite;
+}
+#p5:hover{opacity:100;
+}
+
 //relative, absolute, fixed, static
 
 #icon{width:300px;
@@ -89,7 +130,8 @@ body{background-color:skyblue;
 #bumper1{//border:solid black;
         width:100px;
       height:100px;
-       background-image:url(../img/pinball.png);}
+       background-image:url(../img/pinball.png);
+       }
 #bumper2{//float:right;
         margin-left:290px;
         //border:solid black;
@@ -97,7 +139,8 @@ body{background-color:skyblue;
         width:100px;
         height:100px;
         background-image:url(../img/pinball.png);
-        transition:0s;}
+        transition:0s;
+        }
 #bumper3{//border:solid black;
           //float:left;
          margin-top:100px;
@@ -105,7 +148,8 @@ body{background-color:skyblue;
         width:100px;
         height:100px;
         background-image:url(../img/pinball.png);
-      transition:0s;}
+      transition:0s;
+      }
 #bumper4{//float:right;
         //border:solid black;
         margin-top:100px;
@@ -113,14 +157,16 @@ body{background-color:skyblue;
         margin-left:290px;
         height:100px;
         background-image:url(../img/pinball.png);
-      transition:0s;}
+      transition:0s;
+      }
 #bumper5{//float:left;
          //border:solid black;
           margin-top:100px;
           width:100px;
           height:100px;
           background-image:url(../img/pinball.png);
-        transition:0s;}
+        transition:0s;
+        }
 #bumper6{border:solid black;
         //float:right;
         margin-top:100px;
@@ -128,13 +174,163 @@ body{background-color:skyblue;
         margin-left:290px;
         height:100px;
       transition:0s;}
+#b1{font-size:40px;
+    color:red;
+    width:150px;
+    position:absolute;
+    left:30px;
+    opacity:0;
+    transition:1s;
+    animation:blinker 0.3s infinite;}
+#b2{font-size:20px;
+    color:red;
+     width:150px;
+     position:absolute;
+     left:-30px;
+     opacity:0;
+     transition:1s;
+     animation:blinker 0.3s infinite;}
+#b3{font-size:40px;
+    color:red;
+    width:150px;
+    position:absolute;
+    left:4px;
+    opacity:0;
+    transition:1s;
+    animation:blinker 0.3s infinite;}
+#b4{font-size:40px;
+    color:red;
+    width:150px;
+     position:absolute;
+     left:35px;
+     opacity:0;
+     transition:1s;
+     animation:blinker 0.3s infinite;}
+#b5{font-size:40px;
+    color:red;
+    width:150px;
+    position:absolute;
+    left:20px;
+    opacity:0;
+    transition:1s;
+    animation:blinker 0.3s infinite;}
+@keyframes blinker{
+   50%{color:red;}
+   50%{color:blue;}
+}
+
 #tube{background-image:url(../img/tube.png);
-      border:solid green 3px;
-      margin-top:150px;
+      border:none;
+      top:2600px;
       height:800px;
-      z-index:12;}
+      width:400px;
+      z-index:12;
+      position:absolute;}
 /*#paper{border:solid white 1px;
       width:150px;
       height:240px;
       margin-left:30px;
-      margin-top:50px;}*/
+      top:5900px;
+       position:absolute;}*/
+#lp{background-image:url("../img/page-left.png");
+      height:240px;
+      width:75px;
+      left:45px;
+      //border:solid black 2px;
+      position:absolute;
+      display:block;
+      transition:1s;
+      }
+
+      
+#rp{background-image:url("../img/page-right.png");
+      height:240px;
+      width:75px;
+      //top:5900px;
+      left:80px;
+      //border:solid black 2px;
+      position:absolute;
+      display:block;
+      transition:1s;
+}
+
+#container{border:solid blue 1px;
+            width:200px;
+            height:240px;
+            top:6000px;
+            margin-left:20px;
+            position:absolute;
+            transition:1s;}
+
+#page1{background-image:url("../img/paper.png");
+     border:none;
+     width:150px;
+     height:250px;
+     left:250px;
+     color:red;
+     margin-top:3400px;
+     position:absolute;
+     transition: 1s;
+     opacity:0;
+     
+     
+     }
+
+#page2{background-image:url("../img/paper.png");
+     border:none;
+     width:150px;
+     height:250px;
+     left:270px;
+     color:red;
+     margin-top:3420px;
+     position:absolute;
+     transition: 1s;
+     transition-delay:0.5s;
+     opacity:0;
+     
+     
+     }
+     
+#page3{background-image:url("../img/paper.png");
+     border:none;
+     width:150px;
+     height:250px;
+     left:290px;
+     color:red;
+     margin-top:3440px;
+     position:absolute;
+     transition: 1s;
+     transition-delay:1s;
+     opacity:0;
+     
+     
+     }
+#slide{background-image:url("../img/slide.png");
+       margin-top:4000px;
+       width:200px;
+       height:300px;
+       left:25px;
+       border:solid yellow 1px;
+       position:absolute;
+}
+
+#dollar{font-size:150px;
+        margin-top:4300px;
+        color:green;
+        left:300px;
+        position:absolute;
+        transition:1s;
+        opacity:100;
+}
+
+#cpu{background-image:url(../img/computer.png);
+     position:absolute;
+     width:300px;
+     height:300px;
+     margin-top:4800px;
+}
+
+
+
+
+            
