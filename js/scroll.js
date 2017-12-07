@@ -12,21 +12,22 @@ window.onscroll = function(){
 
 
   ball.style.top = 12 + y * 1.0 + "px";
-   ball.innerHTML = y + "px" + y * 0.97 + 12 + "px";
+   //ball.innerHTML = y + "px" + y * 0.97 + 12 + "px";
    //ball bounce on "ANIMATION"
   
   //if (y < 320) {ball.style.left = y + "px";}
-  if (y > 40) {ball.style.top = "24px";}
-   if (y >100){ball.style.top = 12 + y * 1.0 + "px";}
-   if (y > 133) {ball.style.top = "120px";}
-   if (y >185){ball.style.top = 12 + y * 1.0 + "px";}
-   if (y >213){ball.style.top = "200px";}
-   if (y >305){ball.style.top = 12 + y * 1.0 + "px";}
+  //if (y > 40) {ball.style.top = "24px";}
+   //if (y >100){ball.style.top = 12 + y * 1.0 + "px";}
+   //if (y > 133) {ball.style.top = "120px";}
+   //if (y >185){ball.style.top = 12 + y * 1.0 + "px";}
+   //if (y >213){ball.style.top = "200px";}
+   //if (y >305){ball.style.top = 12 + y * 1.0 + "px";}
    
-   if (y > 0){ball.style.left = "30px";}
-   if (y > 80) {ball.style.left = "110px";}
-   if (y > 160) {ball.style.left = "190px";}
-   if (y > 300) {ball.style.left = "305px";}
+   //if (y > 0){ball.style.left = "30px";}
+   //if (y > 80) {ball.style.left = "110px";}
+   //if (y > 160) {ball.style.left = "190px";}
+   //if (y > 270) {ball.style.left = "250px";}
+   if (y > 0) {ball.style.left = "306px";}
 
   //ball bounce on "ANIMATION" --end
   if(y > 1360) {ball.style.left =  "1px";}
@@ -79,9 +80,7 @@ window.onscroll = function(){
   //tube moves down
   //if (y > 3100) {tube.style.bottom = y * 1.1 + "3100px";}
   if (y > 2700) {tube.style.top = 550 + y / 1.3 + "px";} else { tube.style.top = "2600px";}
-  //if (y > 4900) {tube.style.top = 500 + y / 1.5 + "px";}
-  //if (y > 3110) {tube.style.top = 12 + y * 1.1 + "px";}
-   //else {tube.style.top = 
+  if (y > 0){cloud.style.top = 0.97 + y / 1.3 + "px";}
 
   //end of tube movement
   //ball in tube
@@ -94,16 +93,17 @@ window.onscroll = function(){
 //animation for ANIMATION header
   if (y > 35) {header.style.top = 12 + y * 1.0 + "px";}
   if (y > 30) {header2.style.top = 12 + y * 1.0 + "px";}
-  // {header.style.top = 12 + y * 1.0 + "px";}
+
   //header.innerHTML =  y + "px" + y * 0.97 + 12 + "px";
 if (y > 305) {header.style.top = 12 + y * 0.8 + "px";}
-if (y > 304) {header2.style.top = -12 + y * 1.1 + "px";}
-//if (y > 400) {header2.style.top = -12 + y * 1.6 + "px";}
+if (y > 304) {header2.style.top = -12 + y * 1.3 + "px";}
 
-if (y > 1000) {header2.style.top = -12 + y * 1.0 + "px";}
+
+if (y > 8000) {header2.style.top = -12 + y * 1.0 + "px";}
   //get rid of color (below) when animation is corrected//
-  if (y > 1000) {header2.style.color = "skyblue";}
+  if (y > 1000) {header2.style.color = "black";}
   else {header2.style.color = "black";}
+  if (y > 6500) {header2.style.opacity = '0';} else{header2.style.opacity = '100';}
 
   //for bumper spring transitions
 if (y > 1481) {bumper1.style.webkitTransform = 'scale(1.5,1.5)';}
@@ -149,11 +149,18 @@ if (y > 2594) {pin5.pause();}
 
 if (y > 2594) {pin1.play();}
 if (y > 2816) {pin1.pause();}
-
- 
-         
-
 //end bumper sfx
+
+//paper tearing sfx
+if (y > 5993) {ripping.play();}
+if (y > 6186){ripping.pause();}
+//end of paper tearing sfx
+
+//clicking sfx
+if (y > 7277) {clicking.play();}
+if (y > 7459){clicking.pause();}
+//end of clicking sfx
+
 //paper tearing
 if (y > 5980) {lp.style.webkitTransform = 'translateX(-30px)';} else {lp.style.webkitTransform = 'translate(0px)';}
 if (y > 5980) {rp.style.webkitTransform = 'translateX(25px)';} else {rp.style.webkitTransform = 'translate(0px)';}
@@ -181,14 +188,16 @@ if (y > 6700){ball.style.left = '150px';}
 if (y > 6740){ball.style.left = '200px';}
 if (y > 6840){ball.style.left = '250px';}
 if (y > 6940){ball.style.left = '300px';}
+if (y > 7035){ball.style.left = '250px';}
+if (y > 7146){ball.style.left = '200px';}
 
 //end of going down the slide
 
 //dollar sign away
-if (y > 6999){dollar.style.webkitTransform = 'rotate(120deg)';} else {dollar.style.webkitTransform = 'rotate(0deg)';}
+if (y > 6999){dollar.style.transform = 'rotate(120deg)';} else {dollar.style.transform = 'rotate(0deg)';}
 if (y > 6999) {dollar.style.opacity = '0';} else {dollar.style.opacity = '100';}
-if (y > 6999){dollar.style.webkitTransform = 'translateX(150px)';}
- 
+if (y > 6999){dollar.style.transform = 'translateX(150px)';}
+//if (y > 6999) {dollar.style.transform = 'rotate(120deg)';}
 
 //end of dollar sign away
 //cpu turns on
@@ -210,7 +219,47 @@ if (y > 7300){p5.style.opacity = '100';} else {p5.style.opacity = '0';}
    if (y > 2300) {b5.style.opacity = '100';}
 //end of text from bumpers
 
+//moving shapes
+{square.style.webkitTransform = 'translateY(50px)';} 
+{square.style.webkitTransform = 'translateY(-50px)';}
 
+{circle.style.webkitTransform = 'translateX(50px)';}
+{circle.style.webkitTransform = 'translateX(-50px)';}
+
+if (y > 8044){triangle.style.webkitTransform = 'rotate(-1080deg)';} else {triangle.style.webkitTransform = 'rotate(1080deg)';}
+
+//end of moving shapes
+
+//ball moves closer to center
+if (y > 8090) {ball.style.top = 50  + y * 1.0 + 'px';}
+if (y > 8125) {ball.style.top = 100  + y * 1.0 + 'px';}
+if (y > 8164) {ball.style.top = 150  + y * 1.0 + 'px';}
+if (y > 8184) {ball.style.top = 200  + y * 1.0 + 'px';}
+if (y > 8204) {ball.style.top = 250  + y * 1.0 + 'px';}
+if (y > 8224) {ball.style.top = 300  + y * 1.0 + 'px';}
+if (y > 8264) {ball.style.top = 350  + y * 1.0 + 'px';}
+if (y > 8284) {ball.style.top = 450  + y * 1.0 + 'px';}
+
+//end of all moves closer to center
+
+//ground appears
+if (y > 8563){ground.style.top = 485 + y * 1.0 + "px";}
+//end of ground appears
+
+//anvil appears
+if (y > 0){anvil.style.top = 12 + y * 1.0 + "px";}
+//anvil jumps back up when ball is 8763px
+if (y > 8963) {anvil.style.top = 200 + y * 1.0 + "px";}
+if (y > 9063) {anvil.style.top = 225 + y * 1.0 + "px";}
+if (y > 9163) {anvil.style.top = 235 + y * 1.0 + "px";}
+
+if (y > 9320){anvil.style.opacity = '100';} else {anvil.style.opacity = '0';}
+//end of anvil appears
+
+//anvil sfx
+if (y > 9320){metal.play();}
+if (y < 9320){metal.pause();}
+//end anvil sfx
 
 
 

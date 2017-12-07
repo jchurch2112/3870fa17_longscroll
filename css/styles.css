@@ -1,8 +1,8 @@
 body{background-color:skyblue;
-    background-image:url(../img/background.png);
+    background-image:url(../img/backgroundv2.png);
     height:400px;}
 
-#canvas{border:2px solid red;
+#canvas{border:2px solid transparent;
         width:400px;
         height:10000px;
         margin:0 auto;
@@ -10,7 +10,7 @@ body{background-color:skyblue;
         top:100px;
         }
 
-#ball{border:2px solid blue;
+#ball{border:none;
          width:30px;
          height:30px;
          color:white;
@@ -19,9 +19,8 @@ body{background-color:skyblue;
          position:absolute;
          //top:123px;
          //right:123px;
-         left:30px;
-         background-color:blue;
-         z-index:13;
+         left:305px;
+         z-index:03;
 
          border-radius:100%;
          //animation: bouncing 1s infinite;
@@ -41,9 +40,7 @@ body{background-color:skyblue;
    top:90px;
    left:35px;
    background-color:none;
-  // z-index:-2;
-   //opacity:0.9;
-   //transition: .8s;}
+  }
 //h1:hover{transform:scale(4,4);}
 
 #header2{margin-top: 15px;
@@ -54,32 +51,39 @@ body{background-color:skyblue;
    top:90px;
    right:50px;
    background-color:none;
-   transition:rotate 1s;}
+   transition:rotate 1s;
+   opacity:100;}
+   
+ #note{position:absolute;
+       font-family:"Comic Sans MS", cursive, sans-serif;
+       top:200px;
+       left:200px;}
 
 
-#p1{border:solid blue 2px;
+#p1{border:none;
     top:1100px;
     left:35px;
     font-size:30px;
     float:left;
     position:absolute;
     }
-#p1_2{border:solid blue 1px;
-      position:relative;
+#p1_2{border:none;
+      position:absolute;
       width:120px;
-      top:1235px;
+      top:1290px;
       left:260px;
       font-size:30px;
       transition: 1s;}
-#p1_2:hover{transform:rotate(-45deg);}
+#p1_2:hover{transform:rotate(-45deg);
+            }
 
 
-#p2{border:grey solid 1px;
+#p2{border:none;
     width:120px;
     font-size:24px;
     position:absolute;
     left:260px;
-    top:2696px;}
+    margin-top:-100px;}
 
 #p3{border:none;
    opacity:0;
@@ -127,21 +131,20 @@ body{background-color:skyblue;
 //#header2:hover{transform:rotate(120deg);}
 
 #wrapper{margin-top:1466px}
-#bumper1{//border:solid black;
-        width:100px;
+#bumper1{width:100px;
       height:100px;
        background-image:url(../img/pinball.png);
        }
 #bumper2{//float:right;
         margin-left:290px;
-        //border:solid black;
+        
         margin-top:120px;
         width:100px;
         height:100px;
         background-image:url(../img/pinball.png);
         transition:0s;
         }
-#bumper3{//border:solid black;
+#bumper3{
           //float:left;
          margin-top:100px;
         //margin-right:50px;
@@ -167,7 +170,7 @@ body{background-color:skyblue;
           background-image:url(../img/pinball.png);
         transition:0s;
         }
-#bumper6{border:solid black;
+#bumper6{background-image:url("../img/pinballred.png");
         //float:right;
         margin-top:100px;
         width:100px;
@@ -226,17 +229,11 @@ body{background-color:skyblue;
       width:400px;
       z-index:12;
       position:absolute;}
-/*#paper{border:solid white 1px;
-      width:150px;
-      height:240px;
-      margin-left:30px;
-      top:5900px;
-       position:absolute;}*/
+
 #lp{background-image:url("../img/page-left.png");
       height:240px;
       width:75px;
       left:45px;
-      //border:solid black 2px;
       position:absolute;
       display:block;
       transition:1s;
@@ -248,13 +245,12 @@ body{background-color:skyblue;
       width:75px;
       //top:5900px;
       left:80px;
-      //border:solid black 2px;
       position:absolute;
       display:block;
       transition:1s;
 }
 
-#container{border:solid blue 1px;
+#container{
             width:200px;
             height:240px;
             top:6000px;
@@ -305,12 +301,11 @@ body{background-color:skyblue;
      
      
      }
-#slide{background-image:url("../img/slide.png");
+#slide{background-image:url("../img/banana.png");
        margin-top:4000px;
        width:200px;
        height:300px;
        left:25px;
-       border:solid yellow 1px;
        position:absolute;
 }
 
@@ -321,7 +316,13 @@ body{background-color:skyblue;
         position:absolute;
         transition:1s;
         opacity:100;
+        animation:1s;
+        -webkit-animation: money 1s infinite;
 }
+/*@keyframes money{
+ 50%{transform:rotate(120deg);}
+ 100%{transform:rotate(-120deg);}
+}*/
 
 #cpu{background-image:url(../img/computer.png);
      position:absolute;
@@ -330,7 +331,147 @@ body{background-color:skyblue;
      margin-top:4800px;
 }
 
+#square{background-color:red;
+        font-family:"Comic Sans MS", cursive, sans-serif;
+        width:100px;
+        height:100px;
+        position:absolute;
+        margin-top:5400px;
+        tansition:1.5s;
+        -webkit-transition: 1.5s;
+        animation:square 3s infinite;
+}
+@keyframes square{
+ 50%{transform: translateY(50px);}
+ 100%{transform: translateY(-50px);}
+}
 
+#triangle{color:springgreen;
+          width:0px;
+          height:0px;
+          margin-top:5460px;
+          left:200px;
+          position:absolute;
+          border-left: 100px solid transparent;
+          border-right: 100px solid transparent;
+          border-bottom: 100px solid green;
+          -webkit-transition:3s;
+          transition:3s;
+          animatiom:spinner 2s infinite;
+          
+}
+#sp{top:15px;
+    left:-20px;
+    position:absolute;
+    font-size:20px;
+    font-family:"Comic Sans MS", cursive, sans-serif;}
+@keyfrrames spinner{
+   50%{transfrom:rotate(360deg);}
+   100%{transfrom:rotate(-360deg);}
+}
 
+#circle{background-color:blue;
+        width:150px;
+        height:150px;
+        border-radius:100%;
+        position:absolute;
+        left:100px;
+        margin-top:5600px;
+        -webkit-transition:1.5s;
+        animation:circle 3s infinite;
+}
+#sp2{color:lightblue;
+     margin-top:20px;
+     position:absolute;
+     font-size:24px;
+     left:15px;
+     top:0px;
+     font-family:"Comic Sans MS", cursive, sans-serif;
+     }
+ @keyframes circle{
+ 50%{transform: translateX(50px);}
+ 100%{transform: translateX(-50px);}  
+}
 
-            
+#anvil{background-image:url("../img/anvil.png");
+      width:400px;
+      height:250px;
+       position:absolute;
+       top:8000px;
+       opacity:0;
+       transition:.3s;
+       z-index:15;}
+
+#ground{border:solid green 2px;
+        background-color:springgreen;
+        position:absolute;
+        height:150px;
+        width:400px;
+        top:9050px;
+        color:darkgreen;
+        font-size:30px;}
+span{font-size:40px;}
+/*these are for the clouds in the background*/
+#cloud{background-image:url("../img/clouds-bg.png");
+       position:absolute;
+       width:400px;
+       height:2500px;
+       top:-1px;
+       z-index:-5;}
+       border
+/*#cloud2{background-image:url("../img/cloud.png");
+       position:absolute;
+       width:150px;
+       height:150px;
+       top:160px;
+       left:150px;;
+       z-index:-5;}
+#cloud3{background-image:url("../img/cloud.png");
+       position:absolute;
+       width:150px;
+       height:150px;
+       top:400px;
+       left:240px;
+       z-index:-5;}
+#cloud4{background-image:url("../img/cloud.png");
+       position:absolute;
+       width:150px;
+       height:150px;
+       top:300px;
+       z-index:-5;}       
+#cloud5{background-image:url("../img/cloud.png");
+       position:absolute;
+       width:150px;
+       height:150px;
+       top:400px;
+       z-index:-5;}
+#cloud6{background-image:url("../img/cloud.png");
+       position:absolute;
+       width:150px;
+       height:150px;
+       top:500px;
+       z-index:-5;}
+#cloud7{background-image:url("../img/cloud.png");
+       position:absolute;
+       width:150px;
+       height:150px;
+       top:600px;
+       z-index:-5;}       
+#cloud8{background-image:url("../img/cloud.png");
+       position:absolute;
+       width:150px;
+       height:150px;
+       top:700px;
+       z-index:-5;}   
+#cloud9{background-image:url("../img/cloud.png");
+       position:absolute;
+       width:150px;
+       height:150px;
+       top:800px;
+       z-index:-5;}
+#cloud10{background-image:url("../img/cloud.png");
+       position:absolute;
+       width:150px;
+       height:150px;
+       top:900px;
+       z-index:-5;}       */
